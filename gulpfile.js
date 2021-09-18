@@ -72,7 +72,7 @@ function watch(){
   gulp.watch(paths.styles.src,styles);
   gulp.watch(paths.scripts.src,scripts);
   gulp.watch(paths.html.src,html);
-  gulp.watch('./app/*.html', gulp.series(browserSyncReload));
+  gulp.watch('./app/*.html', gulp.series(browserSyncReload)); 
 }
 
 const build = gulp.parallel(styles,scripts,html);
@@ -163,4 +163,4 @@ app/
 //     cb();
 //   }
   
-//   exports.default = defaultTask
+//   exports.default = defaultTask 
